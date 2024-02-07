@@ -6,9 +6,7 @@ export function Counter() {
   function handleClickCounter(event: React.MouseEvent) {
     event.preventDefault()
 
-    const newCounter = counter + 1
-
-    setCounter(newCounter)
+    setCounter(counter + 1)
   }
 
   return (
