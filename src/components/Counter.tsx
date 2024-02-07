@@ -1,17 +1,18 @@
 import React, { useState } from 'react'
 
 export function Counter() {
-  const valueAndSetMethod = useState(0)
+  const [counter, setCounter] = useState(0)
 
-  // const counter = valueAndSetMethod[0]
-  // const setCounter = valueAndSetMethod[1]
+  function handleClickCounter(event: React.MouseEvent) {
+    event.preventDefault()
 
-  const [counter, setCounter] = useState(42)
+    console.log('CLICKED!')
+  }
 
   return (
     <div>
       <p>The count is {counter}</p>
-      <button>Increment</button>
+      <button onClick={handleClickCounter}>Increment</button>
     </div>
   )
 }
