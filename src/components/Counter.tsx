@@ -3,8 +3,10 @@ import React, { useState } from 'react'
 export function Counter() {
   const valueAndSetMethod = useState(0)
 
-  const counter = valueAndSetMethod[0]
-  const setCounter = valueAndSetMethod[1]
+  // const counter = valueAndSetMethod[0]
+  // const setCounter = valueAndSetMethod[1]
+
+  const [counter, setCounter] = useState(42)
 
   return (
     <div>
